@@ -14,6 +14,11 @@ const movieSchema = new mongoose.Schema({
     timing: {
         type: String,
         required: true
+    },
+    date: {
+        type: Date,
+        default: Date.now,
+        required: true
     }
 })
 

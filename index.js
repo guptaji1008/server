@@ -16,7 +16,7 @@ app.use(cookieParser())
 app.get("/api/booking", async (req, res) => {
     try {
 
-        const result = await Lastbooking.find().sort({_id: -1}).limit(1)
+        const result = await Lastbooking.find().sort({_id: -1})
         res.status(200).send(result)
 
     }catch(err) {
