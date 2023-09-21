@@ -5,7 +5,7 @@ dotenv.config({path: "./config.env"})
 const cors = require('cors')
 require("./db/conn")
 const Lastbooking = require("./models/movieSchema")
-const port = 8080
+const port = process.env.PORT || 8080
 const app = express()
 
 app.use(express.json())
