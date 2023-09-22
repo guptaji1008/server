@@ -21,7 +21,7 @@ const movieSchema = new mongoose.Schema({
         required: true
     }, 
     timeOfBooking: {
-        type: Date,
+        type: String,
         required: true
     }
 })
