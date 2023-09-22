@@ -29,8 +29,8 @@ app.get("/api/booking", async (req, res) => {
 app.post("/api/booking", async (req, res) => {
     try {
 
-        const {A1, A2, A3, A4, D1, D2, movieName, timing} = req.body
-        const lastBook = new Lastbooking({A1, A2, A3, A4, D1, D2, movieName, timing})
+        const {A1, A2, A3, A4, D1, D2, movieName, timing, timeOfBooking} = req.body
+        const lastBook = new Lastbooking({A1, A2, A3, A4, D1, D2, movieName, timing, timeOfBooking})
         await lastBook.save()
         res.status(201).send("Saved successfully")
 
