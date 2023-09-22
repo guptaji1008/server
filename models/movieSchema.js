@@ -19,10 +19,6 @@ const movieSchema = new mongoose.Schema({
         type: Date,
         default: Date.now,
         required: true
-    }, 
-    timeOfBooking: {
-        type: String,
-        required: true
     }
 })
 
